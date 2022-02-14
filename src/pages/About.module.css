@@ -1,0 +1,119 @@
+.wrapall {
+  display: grid;
+  grid-template-columns: minmax(100vw, 1fr);
+  /* grid-template-rows: minmax(100vh, 1fr); */
+  justify-items: center;
+  background: #f8f8f8;
+}
+
+.locations,
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin-top: 3rem;
+  padding: 20px;
+  font-family: Helvetica, sans-serif;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  color: #525252;
+  max-width: 90%;
+  margin-right: 5%;
+  margin-left: 5%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 10px;
+  background: white;
+  height: auto;
+}
+
+.locations .headwrap,
+.container .aboutwrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  justify-content: center;
+  max-width: 100%;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.locations .headwrap h2 {
+  text-align: center;
+}
+
+.container p {
+  /* word-break: break-all; 
+white-space: normal; */
+  font-size: 1rem;
+  min-width: 0;
+  max-width: 100%;
+}
+
+h2 {
+  font-size: 1.6rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+.container imgwrapper {
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  align-content: center;
+  height: 100%;
+  max-width: 100%;
+}
+
+.container img {
+  max-width: 100%;
+  height: 100%;
+}
+
+.locations:hover,
+.container:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 1024px) {
+  .locations,
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .container img {
+    margin-top: 1rem;
+  }
+}
+
+/* .locations {
+  color: #525252;
+  display: grid;
+  align-items: stretch;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 10px;
+  background: white;
+  margin-top: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+} */
+
+.locations li {
+  list-style: none;
+  text-decoration: underline;
+  padding: 20px;
+}
+
+.locations ul {
+  font-size: 1.1rem;
+  padding: 10px;
+  max-width: 100%;
+}
+
+.locations {
+  margin-bottom: 3rem;
+  min-height: 300px;
+}

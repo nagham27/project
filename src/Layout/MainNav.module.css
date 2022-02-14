@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 0 2%;
+  background: #9563ff;
+  width: 100%;
+  color: whitesmoke;
+  align-items: center;
+  font-family: Helvetica, sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container h1 {
+  margin: 10px 0;
+  font-size: 2rem;
+}
+
+.container ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  font-weight: bold;
+}
+
+.container li {
+  margin-left: 1.2rem;
+  font-size: 1.2rem;
+}
+
+.container a {
+  color: whitesmoke;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
